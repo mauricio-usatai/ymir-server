@@ -1,0 +1,6 @@
+__pycache__
+*.pyc
+venv
+functions.py
+.ymir
+ymir-cli.py
