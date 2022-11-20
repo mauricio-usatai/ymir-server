@@ -2,6 +2,7 @@ from flask import request, jsonify
 
 from app.services import ChallengeService
 from app.services import TimeService
+from app.config.challenges import VERSION
 
 from app import app
 
@@ -68,3 +69,7 @@ def append_history():
     except Exception as e:
         response['message'] = str(e)
         return jsonify(response), 500 
+
+@app.route('/version')
+def version():
+    return jsonify({ 'version': VERSION })

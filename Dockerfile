@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.8-bullseye
 
 ENV VIRTUAL_ENV=/opt/venv
 RUN python -m venv $VIRTUAL_ENV
