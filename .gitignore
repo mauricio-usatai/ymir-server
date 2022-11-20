@@ -4,3 +4,4 @@ venv
 functions.py
 .ymir
 ymir-cli.py
+docker-compose.yaml
